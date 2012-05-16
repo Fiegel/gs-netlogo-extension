@@ -46,6 +46,7 @@ public class StartViewer extends DefaultReporter {
         
         if(!GSManager.viewers.containsKey(graphInViewerName) && GSManager.graphs.containsKey(graphInViewerName)) {
             Viewer createdViewer = GSManager.graphs.get(graphInViewerName).display();
+            //createdViewer.setCloseFramePolicy(Viewer.CloseFramePolicy.HIDE_ONLY);
             GSManager.viewers.put(graphInViewerName, createdViewer);
             GSManager.currentViewer = createdViewer;
             GSManager.currentViewerName = graphInViewerName;

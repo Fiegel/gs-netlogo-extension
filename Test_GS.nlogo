@@ -36,7 +36,8 @@ end
 to grid-generation
   print gs:clear-graph "multi"
   
-  print gs:grid-generation "multi"
+  ;print gs:grid-generation "multi" 20
+  print (gs:grid-generation "multi" 20 0 0 0 1)
 end
 @#$#@#$#@
 GRAPHICS-WINDOW
